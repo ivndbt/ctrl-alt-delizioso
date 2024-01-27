@@ -1,0 +1,663 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[italian]{babel}
+
+\usepackage{fancyhdr} % Per gli headers personalizzati
+\usepackage{extramarks} % Per gli headers e i footers
+
+\usepackage{amsmath}
+
+\usepackage{multicol}
+\setlength{\columnsep}{-20mm} % spazio tra le colonne- negativo per fare la seconda più grande della prima
+
+\usepackage{listings} % per creare sezione dove scrivere ascii art
+\lstdefinestyle{asciistyle}{ % definisco lo stile della sezione lst
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,
+    breaklines=true,
+    keepspaces=true,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=4
+}
+\lstset{style=asciistyle} % setto lo stile della sezione lst come definito sopra
+
+%\usepackage[showframe, pass]{geometry} % per vedere le dimensioni dei margini
+
+% Margini
+\topmargin=-10mm
+\evensidemargin=10mm
+\oddsidemargin=-10mm
+\textwidth=180mm
+\textheight=240mm
+\headsep=5mm 
+
+\headheight=10mm
+
+% --------------------------------------------------------------------
+% Definizione intestazione (non modificare!)
+% --------------------------------------------------------------------
+\newcommand{\HRule}[1]{\rule{\linewidth}{#1}} 	% Riga orizzontale
+
+\makeatletter							% Titolo
+\def\printtitle{%						
+    {\centering \@title \par}}
+\makeatother									
+
+\makeatletter							% Ascii
+\def\printascii{%						
+    {\centering \large \@ascii}}
+\makeatother
+
+\makeatletter							% Autore
+\def\printauthor{%					
+    {\centering \large \@author}}				
+\makeatother							
+
+% --------------------------------------------------------------------
+% Metadata (modificare questi)
+% --------------------------------------------------------------------
+
+\title{	\normalsize \textsc{Il ricettario del cibo semplice e buono} 	% Sottotitolo
+		 	\\[1.5cm]								% 2cm spaziatura verticale
+			\HRule{0.5pt} \\						% Riga orizzontale superiore
+			\LARGE \textbf{\uppercase{Ctrl + Alt + Delizioso}}\\[0.2cm]	% Titolo
+			\normalsize \textsc{Ovvero, come vi insegno a cibarvi con classe.}
+			\HRule{0.5pt} \\ [0.5cm]		% Riga orizzontale inferiore + 0.5cm spaziatura verticale
+			\normalsize \today			% Data ultima modifica (auto update)
+			\\ [2cm]
+		}
+
+\author{
+		Un libro di\\	
+		Ivan aka rookiebwoy\\	
+		(Decisamente non un cuoco LOL)\\ [1cm]
+		}
+
+
+\begin{document}
+
+% ------------------------------------------------------------------------------
+% Intestazione (qui la stampo effettivamente)
+% ------------------------------------------------------------------------------
+\thispagestyle{empty}		% Non numerare la pagina del titolo
+
+\printtitle					% Stampa il titolo come definito sopra
+\begin{lstlisting}
+										_ _  __
+						*		*	   ( | )/_/		*		*
+							*		__( >O< )  			*
+									\_\(_|_)   
+
+
+					            .-----.--,
+					           (______(_. \ _
+					            /     /   || |
+					           :     /    || |
+					           | .---------/|\-.      _.-----,
+					           | :'-------'-'-':       |   = |-.
+					 ___.--------:___          : _  _  |   = |-'
+					'--.)________).--'______.-' (_)(_) :_____:
+
+
+										_ _  __
+							*		   ( | )/_/			*
+						*		*	__( >O< )  		*		*
+									\_\(_|_)   
+	
+\end{lstlisting}
+  	\vfill
+\printauthor				% Stampa l'autore come definito sopra
+\newpage
+
+% ------------------------------------------------------------------------------
+% Header del documento
+% ------------------------------------------------------------------------------
+\pagestyle{fancy}
+
+\rhead{rookiebwoy} % Header a destra
+\lhead{Ctrl + Alt + Delizioso} % Header a sinistra
+\chead{ } % Header centrale
+
+% ------------------------------------------------------------------------------
+% Pagina di introduzione e indice
+% ------------------------------------------------------------------------------
+\setcounter{page}{1}		% Inizia a numerare le pagine da qua
+\section*{Introduzione}
+Pronti per un'avventura deliziosa nel mondo di "Ctrl + Alt + Delizioso"? 
+Questo libro presenta le mie ricette per la preparazione di cibo turbo mega, 
+mirando a un equilibrio tra facilità di preparazione e sapore genuino. 
+
+Sono piatti semplici, pensati per chi, come me, ama i sapori delicati e senza fronzoli. 
+Le istruzioni sono dettagliate, ma vi invito con entusiasmo a sperimentare variazioni. 
+
+Compilate il menu, avviate i fornelli e lanciate il comando \texttt{git gnam update ---recursive} !
+
+\medskip
+NDR: Questo documento è un lavoro in continuo aggiornamento a cadenza casuale.
+
+
+\renewcommand{\contentsname}{Scegli la tua abbuffata}	% Ridefinisco il titolo dell'indice
+\tableofcontents			% Faccio l'indice
+\newpage
+
+% ------------------------------------------------------------------------------
+% Ricette
+% ------------------------------------------------------------------------------
+\section{Piadina}
+
+\subsection*{Note, quantità e operazioni preliminari}
+Per 2 persone.
+
+\bigskip
+\bigskip
+
+\begin{multicols}{2}
+\subsection*{Ingredienti}
+\begin{itemize}
+	\item 70 ml di acqua
+    \item 2 cucchiai di olio extravergine di \\ oliva
+    \item 1/2 cucchiaino di sale
+    \item 140 gr di farina bianca 00
+\end{itemize}
+
+\vspace*{\fill}
+
+
+\columnbreak
+\subsection*{Procedimento}
+
+Versare l'acqua a temperatura ambiente in una ciotola, aggiungere l'olio, il sale e mescolare.
+\medskip
+
+Aggiungere la farina e lavorare velocemente l'impasto con le mani, fino a formare una pallina.
+\medskip
+
+Mettere nel frigo la ciotola chiusa con pellicola e lasciar riposare 30 minuti.
+\medskip
+
+Dividere la pallina in 2 metà, stendere l'impasto e cuocere da entrambi i lati per almeno 3 minuti a lato.
+
+\end{multicols}
+
+\newpage
+
+% ------------------------------------------------------------------------------
+
+\section{Pizza}
+
+\subsection*{Note, quantità e operazioni preliminari}
+Per una teglia piccola.
+
+\bigskip
+\bigskip
+
+\begin{multicols}{2}
+\subsection*{Ingredienti}
+\begin{itemize}
+	\item 300 gr di farina bianca 00
+	\item 13 gr di lievito madre in polvere
+	\item 1 cucchiaino di sale
+	\item 1/2 cucchiaio di zucchero
+	\item 200 ml di acqua
+\end{itemize}
+
+\vspace*{\fill}
+
+\columnbreak
+\subsection*{Procedimento}
+
+Mettere farina, lievito, sale, zucchero in una ciotola e mescolare il tutto.
+Aggiungere, in un colpo solo, tutta l'acqua a temperatura ambiente e mescolare con una forchetta.
+\medskip
+
+Modellare l'impasto con le mani aggiungendo farina fino a che non smette di essere appiccicoso.
+Formare una palla, cospargela di olio nella ciotola e coprire il tutto con pellicola trasparente.
+Lasciare a lievitare in un luogo buio e asciutto (es. forno) per 4/5 ore.
+\medskip
+
+Rilavorare l'impasto per sonfiarlo e rimettere in forno il tutto.
+Attendere 2 ore.
+\medskip
+
+Rilavorare l'impasto per sgonfiarlo e rimettere nuovamente il tutto in forno.
+Attendere 2 ore.
+\medskip
+
+Cospargere la teglia di olio e stendere l'impasto.
+In questa fase non bisogna preoccuparsi di riempire completamente la
+superficie della teglia disonibile.
+Lasciare in forno e attendere 1 ora.
+\medskip
+
+Togliere la teglia dal forno, accenderlo e portarlo a 230 °C in modalità ventilata.
+Dare un ultima stesura all'impasto per colmare la teglia. Condire con solo pomodoro e olio.
+Infornare per 7 minuti.
+\medskip
+
+Togliere la teglie e rapidamente aggiungere mozzarella e altri condimenti a piacere.
+Infornare per 10 minuti circa (tenere controllato finché la crosta non ha preso colore).
+
+\end{multicols}
+
+\newpage
+
+% ------------------------------------------------------------------------------
+
+\section{Maionese}
+
+\subsection*{Note, quantità e operazioni preliminari}
+Tenere l'uovo fuori dal frigo per acclimatarlo.
+
+\bigskip
+\bigskip
+
+\begin{multicols}{2}
+\subsection*{Ingredienti}
+\begin{itemize}
+	\item 1 uovo a temperatura ambiente
+	\item olio di semi
+	\item sale
+	\item pepe
+	\item succo di limone
+\end{itemize}
+
+\vspace*{\fill}
+
+\columnbreak
+\subsection*{Procedimento}
+
+Mettere nel recipiente del frullatore a immersione un dito di olio di semi
+con una spolverata di sale e pepe.
+\medskip
+
+Aggiungere l'uovo (rosso e bianco) e iniziare a frullare.
+In questa fase bisonga continuamente muovere la mano verso l'alto e verso il basso.
+Contemporaneamente continuare a versare un filo d'olio nella salsa.
+\medskip
+
+Prima ch la maionese sia del tutto addensata, fermarsi.
+Aggiungere un goccio di spremuta di limone e eventualmente aggiustare sale e pepe.
+\medskip
+
+Ricominciare a frullare continuando ad aggiungere olio come prima
+fino al raggiungimento della consistenza desiderata.
+\medskip
+
+Conservare in frigorifero in uno scatolino ermeticamente chiuso.
+
+\end{multicols}
+
+\newpage
+
+% ------------------------------------------------------------------------------
+
+\section{Pasta alla carbonara}
+
+\subsection*{Note, quantità e operazioni preliminari}
+Per 2 persone.
+
+\bigskip
+\bigskip
+
+\begin{multicols}{2}
+\subsection*{Ingredienti}
+\begin{itemize}
+	\item 1 uovo
+	\item 50 gr di pancetta
+	\item olio
+	\item pepe
+	\item 140 gr di pasta
+	\item sale grosso
+	\item acqua
+\end{itemize}
+
+\vspace*{\fill}
+
+\columnbreak
+\subsection*{Procedimento}
+
+Tagliare la pancetta a cubetti. Farla rosolare in padella con un filo d'olio.
+Contemporaneamente mettere sul fuoco l'acqua della pasta.
+Quando la pancetta è cotta, spegnere il fornello e continuare con la pasta.
+\medskip
+
+Circa due minuti prima che la pasta abbia finito la cottura: metto in una ciotola 
+l'uovo intero e lo sbatto. Aggiungo pepe generosamente e un po' di grana grattuggiato.
+\medskip
+
+Riaccendo il fuoco della pancetta al minimo, scolo la pasta e la butto nella padella della 
+pancetta mescolandole e rosolandole insieme per un momento.
+\medskip
+
+Con la padella calda e il fuoco spento: verso l'uovo e mescolo in tutto rapidamente
+per evitare di cuocere l'uovo.
+\medskip
+
+Servire e aggiungere grana grattuggiato a piacimento.
+
+\end{multicols}
+
+\newpage
+
+
+% ------------------------------------------------------------------------------
+
+\section{Crepes}
+
+\subsection*{Note, quantità e operazioni preliminari}
+Per 2 persone.
+
+\bigskip
+\bigskip
+
+\begin{multicols}{2}
+\subsection*{Ingredienti}
+\begin{itemize}
+	\item 125 gr di farina
+	\item 2 uova
+	\item 330 ml di latte
+	\item 20 gr di zucchero
+	\item 10 gr di sale
+\end{itemize}
+
+\vspace*{\fill}
+
+\columnbreak
+\subsection*{Procedimento}
+
+Mettere in una ciotola metà del latte preparato, uova (tuorlo e albume), sale, zucchero e farina.
+\medskip
+
+Mescolare con la frusta il tutto, aggiungendo (quando l'impasto si addensa) il latte restante.
+\medskip
+
+Se l'impasto risultasse troppo denso: aggiungere un po' d'acqua.
+\medskip
+
+Lasciare a riposare in frigo per mezz'ora prima di usarlo.
+\medskip
+
+Versare una porzione d'impasto al centro della padella e stenderlo con un cucchiaio con movimenti circolari. 
+Attendere finché il colore non diventa marroncino/beige. 
+Sollevare delicatamente con spatola e servire.
+
+\end{multicols}
+
+\newpage
+
+% ------------------------------------------------------------------------------
+
+\section{Omelette}
+
+\subsection*{Note, quantità e operazioni preliminari}
+Per 1 persona.
+
+\bigskip
+\bigskip
+
+\begin{multicols}{2}
+\subsection*{Ingredienti}
+\begin{itemize}
+	\item 1 uovo
+	\item 4 pomodorini
+	\item 1 sottiletta
+	\item burro
+	\item olio
+	\item sale
+	\item pepe
+	\item basilico
+	\item origano
+\end{itemize}
+
+\vspace*{\fill}
+
+\columnbreak
+\subsection*{Procedimento}
+
+Tagliare in piccoli pezzi i pomodorini e il formaggio.
+Metterli in una ciotola e condirli con olio, sale, pepe, basilico e origano.
+\medskip
+
+In un'altra ciotola, rompere l'uovo e sbatterlo con energia fino a montarlo (leggermente).
+Aggiustare le quantità di sale e pepe.
+\medskip
+
+Far scaldare nel tegamino il burro, versare l'uovo e mettere il coperchio.
+Senza mai girare l'impasto, cuocere a fuoco basso.
+\medskip
+
+Dopo un paio di minuti, disporre al centro i pomodorini e il formaggio.
+Chiudere l'uovo a metà e rimettere il coperchio per un minuto ancora circa.
+\medskip
+
+Servire caldo.
+
+\end{multicols}
+
+\newpage
+
+% ------------------------------------------------------------------------------
+
+\section{Roast Beef}
+
+\subsection*{Note, quantità e operazioni preliminari}
+Un bel rotolone.
+
+\bigskip
+\bigskip
+
+\begin{multicols}{2}
+\subsection*{Ingredienti}
+\begin{itemize}
+	\item rotolo di roast beef
+	\item farina
+	\item pepe
+	\item rosmarino
+	\item salvia
+	\item burro
+	\item vino rosso o birra
+	\item sale
+\end{itemize}
+
+\vspace*{\fill}
+
+\columnbreak
+\subsection*{Procedimento}
+
+Accendere il forno a 180°C.
+\medskip
+
+Rovesciare in una fondina un'abbondante manciata di farina e
+rotolarci la carne in blocco.
+Mettere il rotolo in una pirofila.
+A piacimento aggiungere pepe tritato,
+salvia e rosmarino (probabilmente già legati con lo spago intorno al rotolo).
+\medskip
+
+Preparare del burro sciolto in un pentolino e rovesciarlo sul rotolo prima di infornarlo
+per fare la crostina.
+\medskip
+
+Infornare per 10 minuti.
+\medskip
+
+Girare a testa in giù il rotolo e aggiungere vino rosso o birra.
+Tenere girato per ulteriori 20 minuti in forno.
+\medskip
+
+Attendere raffreddamento per tagliare fettine più sottili.
+
+\end{multicols}
+
+\newpage
+
+% ------------------------------------------------------------------------------
+
+\section{Ragù}
+
+\subsection*{Note, quantità e operazioni preliminari}
+4 o 5 barattoli di marmellata piccoli.
+
+\bigskip
+\bigskip
+
+\begin{multicols}{2}
+\subsection*{Ingredienti}
+\begin{itemize}
+	\item 500gr vitello/maiale macinato
+	\item 400gr passata di pomodoro
+	\item 1/4 cipolla
+	\item 1 carota
+	\item rosmarino
+	\item 2 bicchieri di brodo
+\end{itemize}
+
+\vspace*{\fill}
+
+\columnbreak
+\subsection*{Procedimento}
+
+Se non disponibili preparare 2 bicchieri di brodo (utilizzando
+mezzo dado in totale) nel microonde per 4 minuti.
+\medskip
+
+Nella pentola del minestrone far scaldare un dito di olio.
+Aggiungere carota e cipolla tagliate a pezzettini piccoli.
+Far rosolare a fuoco alto finché la cipolla non è dorata.
+Aggiungere la carne.
+Lasciare che la carne rosoli (diventi di color marroncino).
+Aggiungere tutta la passata e i due bicchieri di brodo.
+\medskip
+
+Mescolare il tutto. Aggiungere rosmarino e pepe.
+Portare a bollore.
+\medskip
+
+A questo punto abbassare il fuoco al minimo, 
+mettere il coperchio e lasciare a risposo per 90 minuti.
+\medskip
+
+Scaduto il tempo verificare se il ragù è acquoso.
+Se sì alzo la fiamma a coperchio aperto per farlo restringere.
+Se no è pronto.
+
+\end{multicols}
+
+\newpage
+
+% ------------------------------------------------------------------------------
+
+\section{Besciamella}
+
+\subsection*{Note, quantità e operazioni preliminari}
+300gr. Per quantità differenti mantenere il rapporto 3:1:1 tra
+latte, farina e burro.
+
+\bigskip
+\bigskip
+
+\begin{multicols}{2}
+\subsection*{Ingredienti}
+\begin{itemize}
+	\item 300gr latte intero
+	\item 30gr farina
+	\item 30gr burro
+	\item 2 pizzichi di sale grosso
+	\item noce moscata
+\end{itemize}
+
+\vspace*{\fill}
+
+\columnbreak
+\subsection*{Procedimento}
+
+Mettere il latte nel bicchierone alto di plastica del
+frullino. Scaldare in microonde per 4 minuti (finché
+non bolle). Contemporaneamente nel pentolino far sciogliere
+il burro a fuoco lento (senza farlo diventare scuro).
+\medskip
+
+Salare il latte e aggiungere un sospetto di noce moscata.
+\medskip
+
+Quando il burro sarà completamente sciolto, toglierlo dal fuoco,
+aggiungere la farina e mescolare con forza con una frusta.
+Ad amalgamazione completata, rimettere sul fuoco
+(sempre al minimo) continuando a mescolare sempre, finché non
+diventa di un bel giallo (quasi marrone).
+\medskip
+
+Aggiungere il latte ancora caldo nel pentolino poco per volta,
+tenendo il fuoco al minimo e mescolando lentamente per amalgamare.
+\medskip
+
+Usare subito.
+
+\end{multicols}
+
+\newpage
+
+% ------------------------------------------------------------------------------
+
+\section{Lasagne}
+
+\subsection*{Note, quantità e operazioni preliminari}
+Una teglia piccola (3 porzioni).
+Considerare 4 strati di condimento.
+
+\bigskip
+\bigskip
+
+\begin{multicols}{2}
+\subsection*{Ingredienti}
+\begin{itemize}
+	\item 3 barattoli ragù
+	\item 300gr besciamella
+	\item sfoglie della lasagna
+	\item grana
+	\item sottilette
+	\item olio
+\end{itemize}
+
+\vspace*{\fill}
+
+\columnbreak
+\subsection*{Procedimento}
+
+Spalmare un cucchiaio di besciamella sul fondo della teglia
+per evitare che attacchi. Disporre il primo strato di sfoglia. 
+Mettere 3 cucchiai di besciamella e 3 cucchiai abbondanti
+di ragù. Posizionare una sottiletta divisa in 4 parti sul ragù.
+Aggiungere una spolverata di grana grattuggiato.
+\medskip
+
+Ripetere il procedimento fino ad arrivare al quarto strato di 
+sfoglia.
+\medskip
+
+Sopra il quarto strato di sfoglia, condire con besciamella,
+ragù, sottiletta, abbondante grana grattuggiato e un filo di olio.
+\medskip
+
+Infornare a 190°C ventilato per 30 minuti.
+\medskip
+
+Togliere e gustare.
+
+\end{multicols}
+
+\newpage
+
+
+
+
+
+
+
+\end{document}
+
+
+

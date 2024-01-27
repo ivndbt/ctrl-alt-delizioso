@@ -1,0 +1,14 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+  "latex-workshop.latex.autoClean.run": "onBuilt",
+  "latex-workshop.latex.clean.fileTypes": [
+    "**/*.aux",
+    "**/*.fdb_latexmk",
+    "**/*.fls",
+    "**/*.log",
+    "**/*.gz",
+    "**/*.toc"],
+
+
+
+}
