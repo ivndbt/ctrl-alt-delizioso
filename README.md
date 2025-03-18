@@ -1,6 +1,6 @@
 # Ctrl + Alt + Delizioso
 
-**Disclaimer: Full English description and project log are available [here](https://www.rookiebwoy.eu/projects/ctrl-alt-delizioso/ctrl-alt-delizioso.php).**
+**Disclaimer: Full English description and project log are available on ~~[rookiebwoy.eu](https://www.rookiebwoy.eu/projects/ctrl-alt-delizioso/ctrl-alt-delizioso.php)~~ [ivndbt.com](https://ivndbt.com/makes/ctrl-alt-delizioso/ctrl-alt-delizioso.html).**
 
 "Ctrl + Alt + Delizioso" ha avuto origine come un esperimento personale per migliorare le mie competenze in LaTeX, ispirato dal lavoro del mio amico [Pozzo](https://francescopozzoni.it/).
 
